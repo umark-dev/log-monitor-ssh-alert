@@ -1,0 +1,15 @@
+# Requirements for Log Monitoring & SSH Intrusion Alert Tool
+# Keep versions minimal here; pin in production if desired.
+watchdog
+requests
+pyyaml
+aiosmtplib
+python-dotenv
+# Optional but recommended for testing
+pytest
+
+
+requests>=2.31.0
+geoip2>=4.9.0
+twilio>=8.15.0
+aiohttp>=3.9.0
