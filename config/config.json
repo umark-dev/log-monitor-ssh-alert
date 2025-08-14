@@ -1,0 +1,35 @@
+{
+  "log_file_path": "/var/log/auth.log",
+  "failed_login_threshold": 5,
+  "alert_cooldown_minutes": 10,
+  "auto_block_enabled": true,
+  "geoip_enabled": true,
+  
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 587,
+    "use_tls": true,
+    "sender_email": "alert@example.com",
+    "sender_password": "your_password",
+    "recipient_email": "admin@example.com"
+  },
+
+  "slack": {
+    "enabled": true,
+    "webhook_url": "https://hooks.slack.com/services/XXXX/YYYY/ZZZZ"
+  },
+
+  "sms": {
+    "enabled": false,
+    "account_sid": "your_twilio_sid",
+    "auth_token": "your_twilio_auth_token",
+    "from_number": "+1234567890",
+    "to_number": "+0987654321"
+  },
+
+  "multi_log_paths": [
+    "/var/log/auth.log",
+    "/var/log/secure"
+  ]
+}
